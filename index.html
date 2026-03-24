@@ -14,36 +14,53 @@
             color: #5A3A2E;
         }
 
-        /* HERO PREMIUM */
+        /* HERO PROFISSIONAL */
         .hero {
-            background-color: #F7DDE2;
-            padding: 40px 20px 60px;
+            background: linear-gradient(180deg, #F7DDE2 0%, #F4C8D2 100%);
+            /* tom único com degradê suave */
+            padding: 50px 20px 40px;
+            /* altura elegante */
             text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+            /* profundidade */
         }
 
+        /* LOGO */
         .hero-logo {
-            width: 100%;
-            max-width: 550px;
-            /* controla o tamanho da logo */
+            max-width: 380px;
+            /* tamanho ideal no desktop */
+            width: 90%;
+            /* adapta ao mobile */
+            margin: 0 auto 10px;
             display: block;
-            margin: 0 auto 20px;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.18));
+            /* deixa flutuante */
         }
 
+        /* SUBTÍTULO */
         .hero-sub {
             font-size: 18px;
-            color: #3A2A20;
-            margin-bottom: 20px;
+            color: #4D3A32;
+            /* marrom suave e elegante */
+            margin-bottom: 22px;
         }
 
-        /* BOTÕES */
+        /* BOTÕES DA HERO */
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
         .btn {
             background: #5A3A2E;
             color: #fff;
-            padding: 12px 26px;
-            margin: 10px 6px;
-            display: inline-block;
-            text-decoration: none;
+            padding: 12px 22px;
             border-radius: 8px;
+            text-decoration: none;
             font-weight: 600;
         }
 
@@ -53,40 +70,27 @@
 
         /* MOBILE */
         @media (max-width: 480px) {
+            .hero {
+                padding: 40px 20px 30px;
+                border-radius: 0 0 22px 22px;
+            }
+
             .hero-logo {
-                max-width: 350px;
+                max-width: 280px;
             }
 
             .hero-sub {
                 font-size: 16px;
             }
 
-            .btn {
-                width: 90%;
-                font-size: 16px;
-            }
-        }
-
-        /* MOBILE */
-        @media (max-width: 480px) {
-            .hero {
-                height: 280px;
-                background-size: contain;
-                padding-top: 20px;
-            }
-
-            .hero h1 {
-                font-size: 26px;
-            }
-
-            .hero p {
-                font-size: 14px;
+            .hero-buttons {
+                flex-direction: column;
+                gap: 10px;
             }
 
             .btn {
-                width: auto;
-                padding: 10px 18px;
-                font-size: 14px;
+                width: 100%;
+                text-align: center;
             }
         }
 
@@ -136,14 +140,17 @@
     <!-- HERO -->
 
     <div class="hero">
-        <img src="logo_confeitariadabarby.png" alt="Confeitaria da Barby" class="hero-logo">
+        <img src="logo_confeitariadabarby.png" alt="Logo Confeitaria da Barby" class="hero-logo">
 
         <p class="hero-sub">Adoçando Salvador desde 2017 🍰</p>
 
-        <a class="btn" href="https://wa.me/5571993112220">Fazer Pedido no WhatsApp</a>
-        <a class="btn btn-secondary" href="#cardapio">Ver Cardápio</a>
-    </div>
+        <div class="hero-buttons">
 
+            <a href="https://wa.me/5571993112220" class="btn">Fazer Pedido no WhatsApp</a>
+
+            <a href="#cardapio" class="btn btn-secondary">Ver Cardápio</a>
+        </div>
+    </div>
 
     <!-- SOBRE -->
     <div class="section">
