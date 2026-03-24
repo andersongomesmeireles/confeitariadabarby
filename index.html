@@ -17,26 +17,33 @@
         /* HERO PROFISSIONAL */
         .hero {
             background: linear-gradient(180deg, #F7DDE2 0%, #F4C8D2 100%);
-            padding: 10px 5px 15px;
+            padding: 20px 20px 35px;
+            /* hero menor */
             text-align: center;
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
         }
 
+        /* LOGO – agora com PNG transparente REAL */
         .hero-logo {
-            max-width: 800px;
-            /* logo grande sem aumentar o bloco */
+            max-width: 600px;
+            /* AQUI você aumenta/diminui o tamanho */
             width: 100%;
-            margin-bottom: 15px;
+            display: block;
+            margin: 0 auto 10px;
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.20));
+            /* sombra elegante */
         }
 
+        /* Subtítulo */
         .hero-sub {
             font-size: 18px;
             color: #4D3A32;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
 
-        /* BOTÕES DA HERO */
+        /* BOTÕES */
         .hero-buttons {
             display: flex;
             justify-content: center;
@@ -60,26 +67,20 @@
         /* MOBILE */
         @media (max-width: 480px) {
             .hero {
-                padding: 40px 20px 30px;
-                border-radius: 0 0 22px 22px;
+                padding: 25px 20px 25px;
             }
 
             .hero-logo {
-                max-width: 280px;
+                max-width: 360px;
+                /* perfeito no mobile */
             }
 
             .hero-sub {
                 font-size: 16px;
             }
 
-            .hero-buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-
             .btn {
                 width: 100%;
-                text-align: center;
             }
         }
 
@@ -129,15 +130,16 @@
     <!-- HERO -->
 
     <div class="hero">
-        <img src="logo_confeitariadabarby.png" alt="Logo Confeitaria da Barby" class="hero-logo">
+        logo_confeitariadabarby.png
 
         <p class="hero-sub">Adoçando Salvador desde 2017 🍰</p>
 
         <div class="hero-buttons">
 
-            <a href="https://wa.me/5571993112220" class="btn">Fazer Pedido no WhatsApp</a>
+            https://wa.me/5571993112220Fazer Pedido no WhatsApp</a>
 
-            <a href="#cardapio" class="btn btn-secondary">Ver Cardápio</a>
+
+            #cardapioVer Cardápio</a>
         </div>
     </div>
 
