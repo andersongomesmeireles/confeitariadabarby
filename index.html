@@ -1,169 +1,224 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+        <!DOCTYPE html>
+        <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confeitaria da Barby</title>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Confeitaria da Barby</title>
 
-    <style>
-        body {
-            margin: 0;
-            background: #FFF8F2;
-            font-family: "Poppins", sans-serif;
-            color: #5A3A2E;
-        }
+            <style>
+                body {
+                    margin: 0;
+                    background: #FFF8F2;
+                    font-family: "Poppins", sans-serif;
+                    color: #5A3A2E;
+                }
 
-        /* HERO PROFISSIONAL */
-        .hero {
-            background: linear-gradient(180deg, #F7DDE2 0%, #F4C8D2 100%);
-            padding: 20px 20px 35px;
-            text-align: center;
-            border-bottom-left-radius: 35px;
-            border-bottom-right-radius: 35px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-        }
+                /* MENU FIXO */
+                .menu {
+                    display: flex;
+                    justify-content: center;
+                    gap: 22px;
+                    padding: 14px 10px;
+                    background: #ffffffcc;
+                    backdrop-filter: blur(8px);
+                    position: sticky;
+                    top: 0;
+                    z-index: 1000;
+                }
 
-        .hero-logo {
-            max-width: 900px;
-            width: 100%;
-            display: block;
-            margin: 0 auto 10px;
-            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.20));
-        }
+                .menu a {
+                    text-decoration: none;
+                    color: #5A3A2E;
+                    font-weight: 600;
+                    font-size: 17px;
+                }
 
-        .hero-sub {
-            font-size: 18px;
-            color: #4D3A32;
-            margin-bottom: 20px;
-        }
+                .menu a:hover {
+                    color: #E7A9B6;
+                }
 
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
+                /* HERO */
+                .hero {
+                    background: linear-gradient(180deg, #F7DDE2 0%, #F4C8D2 50%);
+                    padding: 5px 5px 10px;
+                    text-align: center;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+                }
 
-        .btn {
-            background: #5A3A2E;
-            color: #fff;
-            padding: 12px 22px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-        }
+                .hero-logo {
+                    max-width: 1080px;
+                    width: 100%;
+                    display: block;
+                    margin: 0 auto 10px;
+                    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.20));
+                }
 
-        .btn-secondary {
-            background: #E7A9B6;
-        }
+                .hero-sub {
+                    font-size: 30px;
+                    margin-top: -180px;
+                    margin-bottom: 30px;
+                    color: #4D3A32;
+                }
 
-        @media (max-width: 480px) {
-            .hero {
-                padding: 25px 20px 25px;
-            }
+                .hero-buttons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                }
 
-            .hero-logo {
-                max-width: 360px;
-            }
+                .btn {
+                    background: #5A3A2E;
+                    color: #fff;
+                    padding: 12px 22px;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
 
-            .hero-sub {
-                font-size: 16px;
-            }
+                .btn-secondary {
+                    background: #E7A9B6;
+                }
 
-            .btn {
-                width: 100%;
-            }
-        }
+                @media (max-width: 480px) {
+                    .hero {
+                        padding: 25px 20px 25px;
+                    }
 
-        .section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+                    .hero-logo {
+                        max-width: 360px;
+                    }
 
-        .section h2 {
-            text-align: center;
-            font-size: 26px;
-            margin-bottom: 16px;
-        }
+                    .hero-sub {
+                        font-size: 20px;
+                        margin-top: -60px;
+                    }
 
-        .card {
-            background: #fff;
-            border-left: 5px solid #D9B17C;
-            padding: 16px;
-            border-radius: 6px;
-            margin-bottom: 16px;
-            font-size: 16px;
-        }
+                    .btn {
+                        width: 100%;
+                    }
+                }
 
-        .contact p {
-            font-size: 15px;
-            margin: 5px 0;
-        }
+                .section {
+                    padding: 40px 20px;
+                    max-width: 900px;
+                    margin: auto;
+                }
 
-        .footer {
-            background: #5A3A2E;
-            color: #fff;
-            text-align: center;
-            padding: 22px;
-            margin-top: 40px;
-            font-size: 14px;
-        }
-    </style>
-</head>
+                .section h2 {
+                    text-align: center;
+                    font-size: 28px;
+                    margin-bottom: 16px;
+                }
 
-<body>
+                .card {
+                    background: #fff;
+                    border-left: 5px solid #D9B17C;
+                    padding: 16px;
+                    border-radius: 6px;
+                    margin-bottom: 16px;
+                    font-size: 16px;
+                }
 
-    <!-- HERO -->
-    <div class="hero">
-        <img src="logo_confeitariadabarby.png" alt="Logo Confeitaria da Barby" class="hero-logo">
+                .contact p {
+                    font-size: 15px;
+                    margin: 5px 0;
+                }
 
-        <p class="hero-sub">Adoçando Salvador desde 2017 🍰</p>
+                .footer {
+                    background: #5A3A2E;
+                    color: #fff;
+                    text-align: center;
+                    padding: 22px;
+                    margin-top: 40px;
+                    font-size: 14px;
+                }
+            </style>
+        </head>
 
-        <div class="hero-buttons">
-            <a class="btn" href="https://wa.me/5571993112220">Fazer Pedido no WhatsApp</a>
-            <a class="btn btn-secondary" href="#cardapio">Ver Cardápio</a>
-        </div>
-    </div>
+        <body>
 
-    <!-- SOBRE -->
-    <div class="section">
-        <h2>Sobre Nós</h2>
-        <p>
-            A Confeitaria da Barby prepara bolos personalizados, doces artesanais
-            e sobremesas feitas com carinho e ingredientes selecionados.
-            Desde 2017 atendemos Salvador com qualidade e dedicação.
-        </p>
-    </div>
+            <!-- MENU FIXO -->
+            <nav class="menu">
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#datas">Datas Especiais</a>
+                <a href="https://www.instagram.com/confeitariadabarby" target="_blank">Instagram</a>
+                <a href="https://wa.me/5571993112220" target="_blank">WhatsApp</a>
+            </nav>
 
-    <!-- CARDÁPIO -->
-    <div class="section" id="cardapio">
-        <h2>Cardápio</h2>
+            <!-- HERO -->
+            <div class="hero">
+                <img src="logo_confeitariadabarby.png" alt="Logo Confeitaria da Barby" class="hero-logo">
 
-        <div class="card"><strong>🍰 Bolos Personalizados</strong><br>Bolos temáticos, chantininho e pasta americana.
-        </div>
-        <div class="card"><strong>🧁 Doces & Sobremesas</strong><br>Cupcakes, brigadeiros gourmet, brownies.</div>
-        <div class="card"><strong>🍱 Linha Fit</strong><br>Opções leves e equilibradas.</div>
-        <div class="card"><strong>🎉 Eventos</strong><br>Aniversários, festas, eventos corporativos.</div>
+                <p class="hero-sub">Adoçando Salvador desde 2017 🍰</p>
 
-        <a class="btn" href="https://wa.me/5571993112220">Consultar Valores</a>
-    </div>
+                <div class="hero-buttons">
+                    <a class="btn" href="https://wa.me/5571993112220" target="_blank">WhatsApp</a>
+                    <a class="btn btn-secondary" href="#cardapio">Cardápio</a>
+                    <a class="btn" href="https://www.instagram.com/confeitariadabarby" target="_blank">Instagram</a>
+                </div>
+            </div>
 
-    <!-- CONTATO -->
-    <div class="section contact">
-        <h2>Contato</h2>
-        <p><strong>📍 Endereço:</strong> Rua dos Bandeirantes, 100 – Matatu, Salvador/BA</p>
-        <p><strong>📅 Horário:</strong> Seg a Sáb • 09h às 20h</p>
-        <p><strong>📱 WhatsApp:</strong> (71) 9 9311-2220</p>
-        <p><strong>📸 Instagram:</strong> @confeitariadabarby</p>
-    </div>
+            <!-- SOBRE -->
+            <div class="section" id="sobre">
+                <h2>Sobre Nós</h2>
+                <p>
+                    A Confeitaria da Barby prepara bolos personalizados, doces artesanais
+                    e sobremesas feitas com carinho e ingredientes selecionados.
+                    Desde 2017 atendemos Salvador com qualidade e dedicação.
+                </p>
+            </div>
 
-    <!-- FOOTER -->
-    <div class="footer">
-        © 2026 Confeitaria da Barby — Feito com carinho 🍰
-    </div>
+            <!-- CARDÁPIO -->
+            <div class="section" id="cardapio">
+                <h2>Cardápio</h2>
 
-</body>
+                <div class="card"><strong>🍰 Bolos Personalizados</strong><br>Bolos temáticos, chantininho e pasta americana.</div>
+                <div class="card"><strong>🧁 Doces & Sobremesas</strong><br>Cupcakes, brigadeiros gourmet, brownies.</div>
+                <div class="card"><strong>🍱 Linha Fit</strong><br>Opções leves e equilibradas.</div>
+                <div class="card"><strong>🎉 Eventos</strong><br>Encomendas especiais para festas e comemorações.</div>
+            </div>
 
-</html>
+            <!-- EVENTOS -->
+            <div class="section" id="eventos">
+                <h2>Eventos</h2>
+
+                <div class="card">🎀 Chá de Bebê</div>
+                <div class="card">👶 Chá Revelação</div>
+                <div class="card">🎉 Aniversários</div>
+                <div class="card">🏢 Eventos Corporativos</div>
+            </div>
+
+            <!-- DATAS ESPECIAIS -->
+            <div class="section" id="datas">
+                <h2>Datas Especiais</h2>
+
+                <div class="card">🐰 Páscoa</div>
+                <div class="card">🌷 Dia das Mães</div>
+                <div class="card">❤️ Dia dos Namorados</div>
+                <div class="card">👨 Dia dos Pais</div>
+                <div class="card">🎄 Natal</div>
+            </div>
+
+            <!-- CONTATO -->
+            <div class="section contact" id="contato">
+                <h2>Contato</h2>
+                <p><strong>📍 Endereço:</strong> Rua dos Bandeirantes, 100 – Matatu, Salvador/BA</p>
+                <p><strong>📅 Horário:</strong> Seg a Sáb • 09h às 20h</p>
+                <p><strong>📱 WhatsApp:</strong> (71) 9 9311-2220</p>
+                <p><strong>📸 Instagram:</strong> @confeitariadabarby</p>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                © 2026 Confeitaria da Barby — Feito com carinho 🍰
+            </div>
+
+        </body>
+
+        </html>
